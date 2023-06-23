@@ -1,0 +1,207 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+}
+
+label.error{
+  font-size: 14px;
+  color: red;
+}
+
+.errors ul{
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 5px !important;
+}
+
+/* User Auth  */
+.userAuth {
+  background: #222D32;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.userAuth .login-box {
+  background: #1A2226;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.userAuth .login-key {
+  height: 100px;
+  font-size: 80px;
+  line-height: 100px;
+  background: -webkit-linear-gradient(#27EF9F, #0DB8DE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.userAuth .login-title {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #ECF0F5;
+}
+
+.userAuth .login-form {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.userAuth input[type=text],
+.userAuth input[type=email],
+.userAuth input[type=password] {
+  background-color: #1A2226;
+  border: none;
+  border-bottom: 2px solid #0DB8DE;
+  border-top: 0px;
+  border-radius: 0px;
+  font-weight: bold;
+  outline: 0;
+  margin-bottom: 20px;
+  padding-left: 0px;
+  color: #ECF0F5;
+  letter-spacing: 1px;
+}
+
+.userAuth .form-group {
+  margin-bottom: 40px;
+  outline: 0px;
+}
+
+.userAuth .form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 2px solid #0DB8DE;
+  outline: 0;
+  background-color: #1A2226;
+  color: #ECF0F5;
+}
+
+.userAuth input:focus {
+  outline: none;
+  box-shadow: 0 0 0;
+}
+
+.userAuth label {
+  margin-bottom: 0px;
+}
+
+.userAuth .form-control-label {
+  font-size: 10px;
+  color: #6C6C6C;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.userAuth .btn-outline-primary {
+  border-color: #0DB8DE;
+  color: #0DB8DE;
+  border-radius: 0px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.userAuth .btn-outline-primary:hover {
+  background-color: #0DB8DE;
+  right: 0px;
+  color: #ECF0F5;
+}
+
+.userAuth .register-button a,
+.userAuth .signin-button a {
+  text-decoration: none;
+  color: #6C6C6C;
+}
+
+.userAuth .register-button a:hover,
+.userAuth .signin-button a:hover {
+  color: #0DB8DE;
+}
+
+/* .......... */
+
+/*pan request table*/
+.panRequest table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  width: 100%;
+  /*table-layout: fixed;*/
+}
+
+.panRequest table tr {
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+.panRequest table th,
+.panRequest table td {
+  padding: .625em;
+  text-align: center;
+  border: 1px solid grey;
+}
+
+.panRequest table tr:nth-child(even) {
+  background-color: #e8e6e6;
+}
+
+.panRequest table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: bold !important;
+  background-color: #e8e6e6;
+}
+
+@media screen and (max-width: 600px) {
+  .panRequest table {
+    border: none;
+  }
+
+  .panRequest table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .panRequest table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+
+  .panRequest table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 1em;
+    text-align: right;
+  }
+
+  .panRequest table td::before {
+    content: attr(data-label);
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .panRequest table td:last-child {
+    border-bottom: 0;
+  }
+}

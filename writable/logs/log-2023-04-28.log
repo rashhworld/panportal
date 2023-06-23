@@ -1,0 +1,16 @@
+CRITICAL - 2023-04-28 06:49:24 --> file_get_contents(): php_network_getaddresses: getaddrinfo for digiapi.xyz failed: No such host is known. 
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'D:\\Installation...', 204)
+#1 D:\Installation\XAMPP\htdocs\work\PanPortal\app\Controllers\UserControl.php(204): file_get_contents('https://digiapi...')
+#2 D:\Installation\XAMPP\htdocs\work\PanPortal\system\CodeIgniter.php(832): App\Controllers\UserControl->showCaptcha()
+#3 D:\Installation\XAMPP\htdocs\work\PanPortal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#4 D:\Installation\XAMPP\htdocs\work\PanPortal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\Installation\XAMPP\htdocs\work\PanPortal\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-04-28 06:50:27 --> file_get_contents(): php_network_getaddresses: getaddrinfo for digiapi.xyz failed: No such host is known. 
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'D:\\Installation...', 204)
+#1 D:\Installation\XAMPP\htdocs\work\PanPortal\app\Controllers\UserControl.php(204): file_get_contents('https://digiapi...')
+#2 D:\Installation\XAMPP\htdocs\work\PanPortal\system\CodeIgniter.php(832): App\Controllers\UserControl->showCaptcha()
+#3 D:\Installation\XAMPP\htdocs\work\PanPortal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#4 D:\Installation\XAMPP\htdocs\work\PanPortal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\Installation\XAMPP\htdocs\work\PanPortal\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

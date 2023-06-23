@@ -1,0 +1,21 @@
+ERROR - 2023-06-12 06:33:15 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-06-12 06:33:15 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 D:\Installation\XAMPP\htdocs\work\PanPortal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\Installation\XAMPP\htdocs\work\PanPortal\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\Installation\XAMPP\htdocs\work\PanPortal\system\Model.php(145): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\Installation\XAMPP\htdocs\work\PanPortal\system\BaseModel.php(523): CodeIgniter\Model->doFind(false, NULL)
+#4 D:\Installation\XAMPP\htdocs\work\PanPortal\app\Controllers\UserControl.php(158): CodeIgniter\BaseModel->find()
+#5 D:\Installation\XAMPP\htdocs\work\PanPortal\system\CodeIgniter.php(832): App\Controllers\UserControl->showUserDash()
+#6 D:\Installation\XAMPP\htdocs\work\PanPortal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#7 D:\Installation\XAMPP\htdocs\work\PanPortal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Installation\XAMPP\htdocs\work\PanPortal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-12 06:34:18 --> file_get_contents(): php_network_getaddresses: getaddrinfo for digiapi.xyz failed: No such host is known. 
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'D:\\Installation...', 204)
+#1 D:\Installation\XAMPP\htdocs\work\PanPortal\app\Controllers\UserControl.php(204): file_get_contents('https://digiapi...')
+#2 D:\Installation\XAMPP\htdocs\work\PanPortal\system\CodeIgniter.php(832): App\Controllers\UserControl->showCaptcha()
+#3 D:\Installation\XAMPP\htdocs\work\PanPortal\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserControl))
+#4 D:\Installation\XAMPP\htdocs\work\PanPortal\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\Installation\XAMPP\htdocs\work\PanPortal\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
