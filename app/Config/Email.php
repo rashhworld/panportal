@@ -55,7 +55,7 @@ class Email extends BaseConfig
      * @var string
      */
     // Enter your email id from where you send email
-    public $SMTPUser = 'no-reply@rashhworld.in';
+    public $SMTPUser = '';
     
 
     /**
@@ -64,7 +64,7 @@ class Email extends BaseConfig
      * @var string
      */
     // Enter your email's password
-    public $SMTPPass = 'Rashmi@siku1509';
+    public $SMTPPass = '';
 
     /**
      * SMTP Port
